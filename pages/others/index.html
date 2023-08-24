@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vscode 插件开发 | Mr li</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="前端,笔记,javascript">
+    
+    <link rel="preload" href="/assets/css/0.styles.e0e8f9de.css" as="style"><link rel="preload" href="/assets/js/app.da8e2192.js" as="script"><link rel="preload" href="/assets/js/2.cdc42c07.js" as="script"><link rel="preload" href="/assets/js/1.96d66c9e.js" as="script"><link rel="preload" href="/assets/js/51.fa3a4aed.js" as="script"><link rel="prefetch" href="/assets/js/10.36e97855.js"><link rel="prefetch" href="/assets/js/11.db060908.js"><link rel="prefetch" href="/assets/js/12.00028cce.js"><link rel="prefetch" href="/assets/js/13.9e53bd94.js"><link rel="prefetch" href="/assets/js/14.9ceb72f6.js"><link rel="prefetch" href="/assets/js/15.24c83a0b.js"><link rel="prefetch" href="/assets/js/16.626d1548.js"><link rel="prefetch" href="/assets/js/17.27e6e6ce.js"><link rel="prefetch" href="/assets/js/18.51150505.js"><link rel="prefetch" href="/assets/js/19.0a3766d4.js"><link rel="prefetch" href="/assets/js/20.7496e260.js"><link rel="prefetch" href="/assets/js/21.9d34fe94.js"><link rel="prefetch" href="/assets/js/22.0e965dd0.js"><link rel="prefetch" href="/assets/js/23.a7cc2a47.js"><link rel="prefetch" href="/assets/js/24.03526f82.js"><link rel="prefetch" href="/assets/js/25.10534ac2.js"><link rel="prefetch" href="/assets/js/26.ba0eb3cb.js"><link rel="prefetch" href="/assets/js/27.b5f1cbe9.js"><link rel="prefetch" href="/assets/js/28.01f23754.js"><link rel="prefetch" href="/assets/js/29.27210b46.js"><link rel="prefetch" href="/assets/js/3.f3c1799a.js"><link rel="prefetch" href="/assets/js/30.c0e6256b.js"><link rel="prefetch" href="/assets/js/31.851ba542.js"><link rel="prefetch" href="/assets/js/32.6ccef8a3.js"><link rel="prefetch" href="/assets/js/33.14708562.js"><link rel="prefetch" href="/assets/js/34.2e8338bd.js"><link rel="prefetch" href="/assets/js/35.bb5826b2.js"><link rel="prefetch" href="/assets/js/36.ee2e712b.js"><link rel="prefetch" href="/assets/js/37.44f276df.js"><link rel="prefetch" href="/assets/js/38.ff80f7b1.js"><link rel="prefetch" href="/assets/js/39.d685e03a.js"><link rel="prefetch" href="/assets/js/4.e7037b41.js"><link rel="prefetch" href="/assets/js/40.35584f24.js"><link rel="prefetch" href="/assets/js/41.280ed404.js"><link rel="prefetch" href="/assets/js/42.9609494f.js"><link rel="prefetch" href="/assets/js/43.4059f525.js"><link rel="prefetch" href="/assets/js/44.8e2a1add.js"><link rel="prefetch" href="/assets/js/45.58302b88.js"><link rel="prefetch" href="/assets/js/46.93a03441.js"><link rel="prefetch" href="/assets/js/47.7aca3854.js"><link rel="prefetch" href="/assets/js/48.e52c8054.js"><link rel="prefetch" href="/assets/js/49.96f174df.js"><link rel="prefetch" href="/assets/js/5.40c77a0e.js"><link rel="prefetch" href="/assets/js/50.5c3d3a5c.js"><link rel="prefetch" href="/assets/js/52.6100727d.js"><link rel="prefetch" href="/assets/js/53.adc50d24.js"><link rel="prefetch" href="/assets/js/54.5221c6d7.js"><link rel="prefetch" href="/assets/js/55.bb2ec316.js"><link rel="prefetch" href="/assets/js/56.f12dae75.js"><link rel="prefetch" href="/assets/js/57.27a9fab0.js"><link rel="prefetch" href="/assets/js/58.cef4ddea.js"><link rel="prefetch" href="/assets/js/59.3f4bff01.js"><link rel="prefetch" href="/assets/js/6.706efa02.js"><link rel="prefetch" href="/assets/js/60.77c824d4.js"><link rel="prefetch" href="/assets/js/61.90dd88d8.js"><link rel="prefetch" href="/assets/js/62.f0fe0bcd.js"><link rel="prefetch" href="/assets/js/63.8cea3544.js"><link rel="prefetch" href="/assets/js/64.93c1e2c4.js"><link rel="prefetch" href="/assets/js/65.c33bffe4.js"><link rel="prefetch" href="/assets/js/66.395bcff2.js"><link rel="prefetch" href="/assets/js/67.136b54e4.js"><link rel="prefetch" href="/assets/js/68.6df0bf27.js"><link rel="prefetch" href="/assets/js/69.1b55c75b.js"><link rel="prefetch" href="/assets/js/7.8f8cf58d.js"><link rel="prefetch" href="/assets/js/70.71498304.js"><link rel="prefetch" href="/assets/js/71.81530be0.js"><link rel="prefetch" href="/assets/js/72.68107d42.js"><link rel="prefetch" href="/assets/js/73.22e6c933.js"><link rel="prefetch" href="/assets/js/74.1fc93ef0.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.657e42b7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e0e8f9de.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Mr li" class="logo"> <span class="site-name can-hide">Mr li</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/pages/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/pages/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/flutter/base/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react-native/" class="nav-link">
+  react-native
+</a></li><li class="dropdown-item"><!----> <a href="/pages/micro-frontends/" class="nav-link">
+  微前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/rust/" class="nav-link">
+  rust
+</a></li><li class="dropdown-item"><!----> <a href="/pages/command/" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/pages/others/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/pages/tool/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/pages/blockchain/" class="nav-link">
+  区块链
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/winljm001" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/pages/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/pages/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/flutter/base/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react-native/" class="nav-link">
+  react-native
+</a></li><li class="dropdown-item"><!----> <a href="/pages/micro-frontends/" class="nav-link">
+  微前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/rust/" class="nav-link">
+  rust
+</a></li><li class="dropdown-item"><!----> <a href="/pages/command/" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/pages/others/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/pages/tool/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/pages/blockchain/" class="nav-link">
+  区块链
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/winljm001" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>其他</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/others/" aria-current="page" class="active sidebar-link">vscode 插件开发</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/others/#环境准备" class="sidebar-link">环境准备</a></li><li class="sidebar-sub-header"><a href="/pages/others/#创建-hello-world" class="sidebar-link">创建 hello world</a></li><li class="sidebar-sub-header"><a href="/pages/others/#package-相关配置" class="sidebar-link">package 相关配置</a></li><li class="sidebar-sub-header"><a href="/pages/others/#底部信息展示条" class="sidebar-link">底部信息展示条</a></li><li class="sidebar-sub-header"><a href="/pages/others/#选择文件夹" class="sidebar-link">选择文件夹</a></li><li class="sidebar-sub-header"><a href="/pages/others/#input-输入" class="sidebar-link">input 输入</a></li><li class="sidebar-sub-header"><a href="/pages/others/#工作区路径" class="sidebar-link">工作区路径</a></li><li class="sidebar-sub-header"><a href="/pages/others/#message-提示" class="sidebar-link">message 提示</a></li><li class="sidebar-sub-header"><a href="/pages/others/#当前编辑器选中的内容" class="sidebar-link">当前编辑器选中的内容</a></li><li class="sidebar-sub-header"><a href="/pages/others/#插件发布" class="sidebar-link">插件发布</a></li><li class="sidebar-sub-header"><a href="/pages/others/#打印-dom-对象" class="sidebar-link">打印 dom 对象</a></li></ul></li><li><a href="/pages/others/cli.html" class="sidebar-link">自动部署</a></li><li><a href="/pages/others/commitlint.html" class="sidebar-link">commitlint</a></li><li><a href="/pages/others/components-doc-workflows.html" class="sidebar-link">文档库workflow搭建过程</a></li><li><a href="/pages/others/design-mode.html" class="sidebar-link">设计原则</a></li><li><a href="/pages/others/nestjs.html" class="sidebar-link">nestjs</a></li><li><a href="/pages/others/node.html" class="sidebar-link">nodejs</a></li><li><a href="/pages/others/pnpm.html" class="sidebar-link">pnpm</a></li><li><a href="/pages/others/release-it.html" class="sidebar-link">release-it</a></li><li><a href="/pages/others/script.html" class="sidebar-link">批处理</a></li><li><a href="/pages/others/surge.html" class="sidebar-link">surge</a></li><li><a href="/pages/others/taro.html" class="sidebar-link">taro</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vscode-插件开发"><a href="#vscode-插件开发" class="header-anchor">#</a> vscode 插件开发</h1> <h2 id="环境准备"><a href="#环境准备" class="header-anchor">#</a> 环境准备</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> yo generator-code
+</code></pre></div><h2 id="创建-hello-world"><a href="#创建-hello-world" class="header-anchor">#</a> 创建 hello world</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>yo code
+</code></pre></div><h2 id="package-相关配置"><a href="#package-相关配置" class="header-anchor">#</a> package 相关配置</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;commands&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// 注册的命令</span>
+      <span class="token property">&quot;command&quot;</span><span class="token operator">:</span> <span class="token string">&quot;extension.createTemplate&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 标题</span>
+      <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;生成文件&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;menus&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// vscode左边的资源管理器右键出来</span>
+    <span class="token property">&quot;explorer/context&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;command&quot;</span><span class="token operator">:</span> <span class="token string">&quot;extension.createTemplate&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">// 配置在右键菜单中的位置</span>
+        <span class="token property">&quot;group&quot;</span><span class="token operator">:</span> <span class="token string">&quot;navigation&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="底部信息展示条"><a href="#底部信息展示条" class="header-anchor">#</a> 底部信息展示条</h2> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">let</span> pclintBar <span class="token operator">=</span> vscode<span class="token punctuation">.</span>window<span class="token punctuation">.</span><span class="token function">createStatusBarItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+pclintBar<span class="token punctuation">.</span>text <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">目标文件夹：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>dirPath<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+pclintBar<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+pclintBar<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+pclintBar<span class="token punctuation">.</span><span class="token function">dispose</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="选择文件夹"><a href="#选择文件夹" class="header-anchor">#</a> 选择文件夹</h2> <div class="language-ts extra-class"><pre class="language-ts"><code>vscode<span class="token punctuation">.</span>window
+  <span class="token punctuation">.</span><span class="token function">showOpenDialog</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token comment">// 是否选择文件夹</span>
+    canSelectFolders<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 是否选择文件</span>
+    canSelectFiles<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 是否选择多个</span>
+    canSelectMany<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    title<span class="token operator">:</span> <span class="token string">&quot;选择模板文件夹&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="input-输入"><a href="#input-输入" class="header-anchor">#</a> input 输入</h2> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">const</span> nameVal <span class="token operator">=</span> <span class="token keyword">await</span> vscode<span class="token punctuation">.</span>window<span class="token punctuation">.</span><span class="token function">showInputBox</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  placeHolder<span class="token operator">:</span> <span class="token string">&quot;提示文字&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="工作区路径"><a href="#工作区路径" class="header-anchor">#</a> 工作区路径</h2> <div class="language-ts extra-class"><pre class="language-ts"><code>vscode<span class="token punctuation">.</span>workspace<span class="token punctuation">.</span>rootPath<span class="token punctuation">;</span>
+</code></pre></div><h2 id="message-提示"><a href="#message-提示" class="header-anchor">#</a> message 提示</h2> <div class="language-ts extra-class"><pre class="language-ts"><code>vscode<span class="token punctuation">.</span>window<span class="token punctuation">.</span><span class="token function">showInformationMessage</span><span class="token punctuation">(</span><span class="token string">&quot;生成成功!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="当前编辑器选中的内容"><a href="#当前编辑器选中的内容" class="header-anchor">#</a> 当前编辑器选中的内容</h2> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> vscode <span class="token keyword">from</span> <span class="token string">&quot;vscode&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// 激活的tab</span>
+<span class="token keyword">const</span> editor<span class="token operator">:</span> vscode<span class="token punctuation">.</span>TextEditor <span class="token operator">|</span> <span class="token keyword">undefined</span> <span class="token operator">=</span> vscode<span class="token punctuation">.</span>window<span class="token punctuation">.</span>activeTextEditor<span class="token punctuation">;</span>
+<span class="token comment">// 获取提取的内容</span>
+<span class="token keyword">const</span> selectionText <span class="token operator">=</span> editor<span class="token operator">?.</span>document<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span>editor<span class="token operator">?.</span>selection<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="插件发布"><a href="#插件发布" class="header-anchor">#</a> 插件发布</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>vsce login
+vsce publish
+<span class="token comment"># 更新</span>
+vsce publish patch
+</code></pre></div><h2 id="打印-dom-对象"><a href="#打印-dom-对象" class="header-anchor">#</a> 打印 dom 对象</h2> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'%O'</span><span class="token punctuation">,</span> ref<span class="token punctuation">.</span>current<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">lastUpdate:</span> <span class="time">9/20/2022, 1:56:52 AM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/pages/others/cli.html">
+        自动部署
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/assets/js/app.da8e2192.js" defer></script><script src="/assets/js/2.cdc42c07.js" defer></script><script src="/assets/js/1.96d66c9e.js" defer></script><script src="/assets/js/51.fa3a4aed.js" defer></script>
+  </body>
+</html>

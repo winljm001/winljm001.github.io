@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档库workflow搭建过程 | Mr li</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="前端,笔记,javascript">
+    
+    <link rel="preload" href="/assets/css/0.styles.e0e8f9de.css" as="style"><link rel="preload" href="/assets/js/app.da8e2192.js" as="script"><link rel="preload" href="/assets/js/2.cdc42c07.js" as="script"><link rel="preload" href="/assets/js/1.96d66c9e.js" as="script"><link rel="preload" href="/assets/js/54.5221c6d7.js" as="script"><link rel="prefetch" href="/assets/js/10.36e97855.js"><link rel="prefetch" href="/assets/js/11.db060908.js"><link rel="prefetch" href="/assets/js/12.00028cce.js"><link rel="prefetch" href="/assets/js/13.9e53bd94.js"><link rel="prefetch" href="/assets/js/14.9ceb72f6.js"><link rel="prefetch" href="/assets/js/15.24c83a0b.js"><link rel="prefetch" href="/assets/js/16.626d1548.js"><link rel="prefetch" href="/assets/js/17.27e6e6ce.js"><link rel="prefetch" href="/assets/js/18.51150505.js"><link rel="prefetch" href="/assets/js/19.0a3766d4.js"><link rel="prefetch" href="/assets/js/20.7496e260.js"><link rel="prefetch" href="/assets/js/21.9d34fe94.js"><link rel="prefetch" href="/assets/js/22.0e965dd0.js"><link rel="prefetch" href="/assets/js/23.a7cc2a47.js"><link rel="prefetch" href="/assets/js/24.03526f82.js"><link rel="prefetch" href="/assets/js/25.10534ac2.js"><link rel="prefetch" href="/assets/js/26.ba0eb3cb.js"><link rel="prefetch" href="/assets/js/27.b5f1cbe9.js"><link rel="prefetch" href="/assets/js/28.01f23754.js"><link rel="prefetch" href="/assets/js/29.27210b46.js"><link rel="prefetch" href="/assets/js/3.f3c1799a.js"><link rel="prefetch" href="/assets/js/30.c0e6256b.js"><link rel="prefetch" href="/assets/js/31.851ba542.js"><link rel="prefetch" href="/assets/js/32.6ccef8a3.js"><link rel="prefetch" href="/assets/js/33.14708562.js"><link rel="prefetch" href="/assets/js/34.2e8338bd.js"><link rel="prefetch" href="/assets/js/35.bb5826b2.js"><link rel="prefetch" href="/assets/js/36.ee2e712b.js"><link rel="prefetch" href="/assets/js/37.44f276df.js"><link rel="prefetch" href="/assets/js/38.ff80f7b1.js"><link rel="prefetch" href="/assets/js/39.d685e03a.js"><link rel="prefetch" href="/assets/js/4.e7037b41.js"><link rel="prefetch" href="/assets/js/40.35584f24.js"><link rel="prefetch" href="/assets/js/41.280ed404.js"><link rel="prefetch" href="/assets/js/42.9609494f.js"><link rel="prefetch" href="/assets/js/43.4059f525.js"><link rel="prefetch" href="/assets/js/44.8e2a1add.js"><link rel="prefetch" href="/assets/js/45.58302b88.js"><link rel="prefetch" href="/assets/js/46.93a03441.js"><link rel="prefetch" href="/assets/js/47.7aca3854.js"><link rel="prefetch" href="/assets/js/48.e52c8054.js"><link rel="prefetch" href="/assets/js/49.96f174df.js"><link rel="prefetch" href="/assets/js/5.40c77a0e.js"><link rel="prefetch" href="/assets/js/50.5c3d3a5c.js"><link rel="prefetch" href="/assets/js/51.fa3a4aed.js"><link rel="prefetch" href="/assets/js/52.6100727d.js"><link rel="prefetch" href="/assets/js/53.adc50d24.js"><link rel="prefetch" href="/assets/js/55.bb2ec316.js"><link rel="prefetch" href="/assets/js/56.f12dae75.js"><link rel="prefetch" href="/assets/js/57.27a9fab0.js"><link rel="prefetch" href="/assets/js/58.cef4ddea.js"><link rel="prefetch" href="/assets/js/59.3f4bff01.js"><link rel="prefetch" href="/assets/js/6.706efa02.js"><link rel="prefetch" href="/assets/js/60.77c824d4.js"><link rel="prefetch" href="/assets/js/61.90dd88d8.js"><link rel="prefetch" href="/assets/js/62.f0fe0bcd.js"><link rel="prefetch" href="/assets/js/63.8cea3544.js"><link rel="prefetch" href="/assets/js/64.93c1e2c4.js"><link rel="prefetch" href="/assets/js/65.c33bffe4.js"><link rel="prefetch" href="/assets/js/66.395bcff2.js"><link rel="prefetch" href="/assets/js/67.136b54e4.js"><link rel="prefetch" href="/assets/js/68.6df0bf27.js"><link rel="prefetch" href="/assets/js/69.1b55c75b.js"><link rel="prefetch" href="/assets/js/7.8f8cf58d.js"><link rel="prefetch" href="/assets/js/70.71498304.js"><link rel="prefetch" href="/assets/js/71.81530be0.js"><link rel="prefetch" href="/assets/js/72.68107d42.js"><link rel="prefetch" href="/assets/js/73.22e6c933.js"><link rel="prefetch" href="/assets/js/74.1fc93ef0.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.657e42b7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e0e8f9de.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Mr li" class="logo"> <span class="site-name can-hide">Mr li</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/pages/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/pages/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/flutter/base/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react-native/" class="nav-link">
+  react-native
+</a></li><li class="dropdown-item"><!----> <a href="/pages/micro-frontends/" class="nav-link">
+  微前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/rust/" class="nav-link">
+  rust
+</a></li><li class="dropdown-item"><!----> <a href="/pages/command/" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/pages/others/" class="nav-link router-link-active">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/pages/tool/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/pages/blockchain/" class="nav-link">
+  区块链
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/winljm001" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/pages/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/pages/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/flutter/base/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react-native/" class="nav-link">
+  react-native
+</a></li><li class="dropdown-item"><!----> <a href="/pages/micro-frontends/" class="nav-link">
+  微前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/rust/" class="nav-link">
+  rust
+</a></li><li class="dropdown-item"><!----> <a href="/pages/command/" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/pages/others/" class="nav-link router-link-active">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/pages/tool/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/pages/blockchain/" class="nav-link">
+  区块链
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/winljm001" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>其他</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/others/" aria-current="page" class="sidebar-link">vscode 插件开发</a></li><li><a href="/pages/others/cli.html" class="sidebar-link">自动部署</a></li><li><a href="/pages/others/commitlint.html" class="sidebar-link">commitlint</a></li><li><a href="/pages/others/components-doc-workflows.html" aria-current="page" class="active sidebar-link">文档库workflow搭建过程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/others/components-doc-workflows.html#添加-access-token" class="sidebar-link">添加 ACCESS_TOKEN</a></li><li class="sidebar-sub-header"><a href="/pages/others/components-doc-workflows.html#创建workflows" class="sidebar-link">创建workflows</a></li><li class="sidebar-sub-header"><a href="/pages/others/components-doc-workflows.html#创建文档仓库" class="sidebar-link">创建文档仓库</a></li></ul></li><li><a href="/pages/others/design-mode.html" class="sidebar-link">设计原则</a></li><li><a href="/pages/others/nestjs.html" class="sidebar-link">nestjs</a></li><li><a href="/pages/others/node.html" class="sidebar-link">nodejs</a></li><li><a href="/pages/others/pnpm.html" class="sidebar-link">pnpm</a></li><li><a href="/pages/others/release-it.html" class="sidebar-link">release-it</a></li><li><a href="/pages/others/script.html" class="sidebar-link">批处理</a></li><li><a href="/pages/others/surge.html" class="sidebar-link">surge</a></li><li><a href="/pages/others/taro.html" class="sidebar-link">taro</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="文档库workflow搭建过程"><a href="#文档库workflow搭建过程" class="header-anchor">#</a> 文档库workflow搭建过程</h1> <h2 id="添加-access-token"><a href="#添加-access-token" class="header-anchor">#</a> 添加 ACCESS_TOKEN</h2> <p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gyd0cmjq57j315p0kp0vw.jpg" alt="image-20220114104325713"></p> <h2 id="创建workflows"><a href="#创建workflows" class="header-anchor">#</a> 创建workflows</h2> <p>创建 <code>.github/workflows/doc.yml</code></p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> deploy gh<span class="token punctuation">-</span>pages
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> main
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build</span><span class="token punctuation">:</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> Build and deploy gh<span class="token punctuation">-</span>pages
+    <span class="token key atrule">env</span><span class="token punctuation">:</span>
+      <span class="token key atrule">MY_SECRET</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span>secrets.ACCESS_TOKEN<span class="token punctuation">}</span><span class="token punctuation">}</span>
+      <span class="token key atrule">USER_NAME</span><span class="token punctuation">:</span> winljm001
+      <span class="token key atrule">USER_EMAIL</span><span class="token punctuation">:</span> 819648983@qq.com
+      <span class="token key atrule">PUBLISH_DIR</span><span class="token punctuation">:</span> ./docs<span class="token punctuation">-</span>dist
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">strategy</span><span class="token punctuation">:</span>
+      <span class="token key atrule">matrix</span><span class="token punctuation">:</span>
+        <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>14.x<span class="token punctuation">]</span>
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v1
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Use Node.js $<span class="token punctuation">{</span><span class="token punctuation">{</span> matrix.node<span class="token punctuation">-</span>version <span class="token punctuation">}</span><span class="token punctuation">}</span>
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> matrix.node<span class="token punctuation">-</span>version <span class="token punctuation">}</span><span class="token punctuation">}</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> install
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          yarn</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> run build
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          yarn doc:build</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Commit files
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          cd $PUBLISH_DIR
+          git init
+          git config --local user.name $USER_NAME
+          git config --local user.email $USER_EMAIL
+          git status
+          git remote add origin https://$MY_SECRET@github.com/hjfruit/远端地址-doc.git
+          git checkout -b main
+          git add --all
+          git commit -m &quot;deploy to Github pages&quot;
+          git push origin main -f
+          echo 🤘 deploy doc-pages complete.</span>
+
+</code></pre></div><h2 id="创建文档仓库"><a href="#创建文档仓库" class="header-anchor">#</a> 创建文档仓库</h2> <p>way1&gt; 新建一个仓库</p> <p>way2&gt; 也可以就在当前仓库，以另一个分支作为文档也可以</p> <p>开启github page</p> <p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gyd0hffw9rj312g0l20vh.jpg" alt="image-20220114105300014"></p> <p>开启过后，如果你当前仓库是github.io,那么你访问地址为<code>组织或个人name.github.io</code>，如果你新建的仓库叫xxx，那么你访问<code>组织或个人name.github.io/xxx</code>此时需要在设置下静态资源的baseurl，否则资源加载失败</p> <p>完成～</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">lastUpdate:</span> <span class="time">1/14/2022, 3:03:20 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/others/commitlint.html" class="prev">
+        commitlint
+      </a></span> <span class="next"><a href="/pages/others/design-mode.html">
+        设计原则
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/assets/js/app.da8e2192.js" defer></script><script src="/assets/js/2.cdc42c07.js" defer></script><script src="/assets/js/1.96d66c9e.js" defer></script><script src="/assets/js/54.5221c6d7.js" defer></script>
+  </body>
+</html>

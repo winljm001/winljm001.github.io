@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>flutter 组件 | Mr li</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="前端,笔记,javascript">
+    
+    <link rel="preload" href="/assets/css/0.styles.e0e8f9de.css" as="style"><link rel="preload" href="/assets/js/app.da8e2192.js" as="script"><link rel="preload" href="/assets/js/2.cdc42c07.js" as="script"><link rel="preload" href="/assets/js/1.96d66c9e.js" as="script"><link rel="preload" href="/assets/js/44.8e2a1add.js" as="script"><link rel="prefetch" href="/assets/js/10.36e97855.js"><link rel="prefetch" href="/assets/js/11.db060908.js"><link rel="prefetch" href="/assets/js/12.00028cce.js"><link rel="prefetch" href="/assets/js/13.9e53bd94.js"><link rel="prefetch" href="/assets/js/14.9ceb72f6.js"><link rel="prefetch" href="/assets/js/15.24c83a0b.js"><link rel="prefetch" href="/assets/js/16.626d1548.js"><link rel="prefetch" href="/assets/js/17.27e6e6ce.js"><link rel="prefetch" href="/assets/js/18.51150505.js"><link rel="prefetch" href="/assets/js/19.0a3766d4.js"><link rel="prefetch" href="/assets/js/20.7496e260.js"><link rel="prefetch" href="/assets/js/21.9d34fe94.js"><link rel="prefetch" href="/assets/js/22.0e965dd0.js"><link rel="prefetch" href="/assets/js/23.a7cc2a47.js"><link rel="prefetch" href="/assets/js/24.03526f82.js"><link rel="prefetch" href="/assets/js/25.10534ac2.js"><link rel="prefetch" href="/assets/js/26.ba0eb3cb.js"><link rel="prefetch" href="/assets/js/27.b5f1cbe9.js"><link rel="prefetch" href="/assets/js/28.01f23754.js"><link rel="prefetch" href="/assets/js/29.27210b46.js"><link rel="prefetch" href="/assets/js/3.f3c1799a.js"><link rel="prefetch" href="/assets/js/30.c0e6256b.js"><link rel="prefetch" href="/assets/js/31.851ba542.js"><link rel="prefetch" href="/assets/js/32.6ccef8a3.js"><link rel="prefetch" href="/assets/js/33.14708562.js"><link rel="prefetch" href="/assets/js/34.2e8338bd.js"><link rel="prefetch" href="/assets/js/35.bb5826b2.js"><link rel="prefetch" href="/assets/js/36.ee2e712b.js"><link rel="prefetch" href="/assets/js/37.44f276df.js"><link rel="prefetch" href="/assets/js/38.ff80f7b1.js"><link rel="prefetch" href="/assets/js/39.d685e03a.js"><link rel="prefetch" href="/assets/js/4.e7037b41.js"><link rel="prefetch" href="/assets/js/40.35584f24.js"><link rel="prefetch" href="/assets/js/41.280ed404.js"><link rel="prefetch" href="/assets/js/42.9609494f.js"><link rel="prefetch" href="/assets/js/43.4059f525.js"><link rel="prefetch" href="/assets/js/45.58302b88.js"><link rel="prefetch" href="/assets/js/46.93a03441.js"><link rel="prefetch" href="/assets/js/47.7aca3854.js"><link rel="prefetch" href="/assets/js/48.e52c8054.js"><link rel="prefetch" href="/assets/js/49.96f174df.js"><link rel="prefetch" href="/assets/js/5.40c77a0e.js"><link rel="prefetch" href="/assets/js/50.5c3d3a5c.js"><link rel="prefetch" href="/assets/js/51.fa3a4aed.js"><link rel="prefetch" href="/assets/js/52.6100727d.js"><link rel="prefetch" href="/assets/js/53.adc50d24.js"><link rel="prefetch" href="/assets/js/54.5221c6d7.js"><link rel="prefetch" href="/assets/js/55.bb2ec316.js"><link rel="prefetch" href="/assets/js/56.f12dae75.js"><link rel="prefetch" href="/assets/js/57.27a9fab0.js"><link rel="prefetch" href="/assets/js/58.cef4ddea.js"><link rel="prefetch" href="/assets/js/59.3f4bff01.js"><link rel="prefetch" href="/assets/js/6.706efa02.js"><link rel="prefetch" href="/assets/js/60.77c824d4.js"><link rel="prefetch" href="/assets/js/61.90dd88d8.js"><link rel="prefetch" href="/assets/js/62.f0fe0bcd.js"><link rel="prefetch" href="/assets/js/63.8cea3544.js"><link rel="prefetch" href="/assets/js/64.93c1e2c4.js"><link rel="prefetch" href="/assets/js/65.c33bffe4.js"><link rel="prefetch" href="/assets/js/66.395bcff2.js"><link rel="prefetch" href="/assets/js/67.136b54e4.js"><link rel="prefetch" href="/assets/js/68.6df0bf27.js"><link rel="prefetch" href="/assets/js/69.1b55c75b.js"><link rel="prefetch" href="/assets/js/7.8f8cf58d.js"><link rel="prefetch" href="/assets/js/70.71498304.js"><link rel="prefetch" href="/assets/js/71.81530be0.js"><link rel="prefetch" href="/assets/js/72.68107d42.js"><link rel="prefetch" href="/assets/js/73.22e6c933.js"><link rel="prefetch" href="/assets/js/74.1fc93ef0.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.657e42b7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e0e8f9de.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Mr li" class="logo"> <span class="site-name can-hide">Mr li</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/pages/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/pages/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/flutter/base/" class="nav-link router-link-active">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react-native/" class="nav-link">
+  react-native
+</a></li><li class="dropdown-item"><!----> <a href="/pages/micro-frontends/" class="nav-link">
+  微前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/rust/" class="nav-link">
+  rust
+</a></li><li class="dropdown-item"><!----> <a href="/pages/command/" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/pages/others/" class="nav-link">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/pages/tool/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/pages/blockchain/" class="nav-link">
+  区块链
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/winljm001" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/pages/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/pages/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/flutter/base/" class="nav-link router-link-active">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/pages/react-native/" class="nav-link">
+  react-native
+</a></li><li class="dropdown-item"><!----> <a href="/pages/micro-frontends/" class="nav-link">
+  微前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/rust/" class="nav-link">
+  rust
+</a></li><li class="dropdown-item"><!----> <a href="/pages/command/" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/pages/others/" class="nav-link">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/pages/tool/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/pages/blockchain/" class="nav-link">
+  区块链
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/winljm001" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/flutter/base/" aria-current="page" class="sidebar-link">flutter 环境搭建</a></li><li><a href="/pages/flutter/base/dart.html" class="sidebar-link">Dart语言</a></li><li><a href="/pages/flutter/base/provider.html" class="sidebar-link">Provider</a></li><li><a href="/pages/flutter/base/widget.html" aria-current="page" class="active sidebar-link">flutter 组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/flutter/base/widget.html#text-样式" class="sidebar-link">Text 样式</a></li><li class="sidebar-sub-header"><a href="/pages/flutter/base/widget.html#按钮" class="sidebar-link">按钮</a></li><li class="sidebar-sub-header"><a href="/pages/flutter/base/widget.html#textfield-样式" class="sidebar-link">TextField 样式</a></li><li class="sidebar-sub-header"><a href="/pages/flutter/base/widget.html#模态框" class="sidebar-link">模态框</a></li><li class="sidebar-sub-header"><a href="/pages/flutter/base/widget.html#停用方法" class="sidebar-link">停用方法</a></li><li class="sidebar-sub-header"><a href="/pages/flutter/base/widget.html#生成列表" class="sidebar-link">生成列表</a></li><li class="sidebar-sub-header"><a href="/pages/flutter/base/widget.html#物理返回钩子" class="sidebar-link">物理返回钩子</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="flutter-组件"><a href="#flutter-组件" class="header-anchor">#</a> flutter 组件</h1> <h2 id="text-样式"><a href="#text-样式" class="header-anchor">#</a> Text 样式</h2> <p>这里的 heigth * fontSize 就是行高</p> <div class="language-d extra-class"><pre class="language-d"><code><span class="token keyword">const</span> textStyle <span class="token operator">=</span> <span class="token function">TextStyle</span><span class="token punctuation">(</span>
+  color<span class="token punctuation">:</span> Color<span class="token punctuation">.</span><span class="token function">fromRGBO</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">,</span> <span class="token number">82</span><span class="token punctuation">,</span> <span class="token number">87</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  fontSize<span class="token punctuation">:</span> <span class="token number">12.0</span><span class="token punctuation">,</span>
+  height<span class="token punctuation">:</span> <span class="token number">1.4</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">Text</span><span class="token punctuation">(</span>
+  '摩配配是专为零售店主，提供优质货源的进货平台\n认证店铺信息，享受批发价格专属服务'<span class="token punctuation">,</span>
+  style<span class="token punctuation">:</span> textStyle<span class="token punctuation">,</span>
+  textAlign<span class="token punctuation">:</span> TextAlign<span class="token punctuation">.</span>center<span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h2 id="按钮"><a href="#按钮" class="header-anchor">#</a> 按钮</h2> <h3 id="宽度-100-的按钮"><a href="#宽度-100-的按钮" class="header-anchor">#</a> 宽度 100% 的按钮</h3> <div class="language-d extra-class"><pre class="language-d"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 圆角 <span class="token operator">--</span><span class="token operator">&gt;</span>
+ShapeBorder shape <span class="token operator">=</span> <span class="token keyword">const</span> <span class="token function">RoundedRectangleBorder</span><span class="token punctuation">(</span>
+  borderRadius<span class="token punctuation">:</span> BorderRadius<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span>
+    Radius<span class="token punctuation">.</span><span class="token function">circular</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">MaterialButton</span><span class="token punctuation">(</span>
+  shape<span class="token punctuation">:</span> shape<span class="token punctuation">,</span>
+  height<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+  minWidth<span class="token punctuation">:</span> <span class="token keyword">double</span><span class="token punctuation">.</span>infinity<span class="token punctuation">,</span>
+  elevation<span class="token punctuation">:</span> <span class="token number">0.0</span><span class="token punctuation">,</span>
+  child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span>
+    <span class="token string">&quot;去认证&quot;</span><span class="token punctuation">,</span>
+    style<span class="token punctuation">:</span> <span class="token function">TextStyle</span><span class="token punctuation">(</span>
+        color<span class="token punctuation">:</span> Color<span class="token punctuation">.</span><span class="token function">fromRGBO</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> fontSize<span class="token punctuation">:</span> <span class="token number">16.0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">,</span>
+  onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  color<span class="token punctuation">:</span> Color<span class="token punctuation">.</span><span class="token function">fromRGBO</span><span class="token punctuation">(</span><span class="token number">227</span><span class="token punctuation">,</span> <span class="token number">75</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h2 id="textfield-样式"><a href="#textfield-样式" class="header-anchor">#</a> TextField 样式</h2> <div class="language-d extra-class"><pre class="language-d"><code><span class="token function">TextField</span><span class="token punctuation">(</span>
+    autofocus<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span>
+    style<span class="token punctuation">:</span> <span class="token function">TextStyle</span><span class="token punctuation">(</span>
+        color<span class="token punctuation">:</span> Color<span class="token punctuation">.</span><span class="token function">fromRGBO</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        fontSize<span class="token punctuation">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+        fontWeight<span class="token punctuation">:</span> FontWeight<span class="token punctuation">.</span>w500<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    decoration<span class="token punctuation">:</span> <span class="token function">InputDecoration</span><span class="token punctuation">(</span>
+        contentPadding<span class="token punctuation">:</span>
+            EdgeInsets<span class="token punctuation">.</span><span class="token function">symmetric</span><span class="token punctuation">(</span>vertical<span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        border<span class="token punctuation">:</span> <span class="token function">OutlineInputBorder</span><span class="token punctuation">(</span>
+            borderRadius<span class="token punctuation">:</span> BorderRadius<span class="token punctuation">.</span><span class="token function">circular</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            borderSide<span class="token punctuation">:</span> BorderSide<span class="token punctuation">.</span>none<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        filled<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span>
+        fillColor<span class="token punctuation">:</span> Color<span class="token punctuation">.</span><span class="token function">fromRGBO</span><span class="token punctuation">(</span><span class="token number">245</span><span class="token punctuation">,</span> <span class="token number">247</span><span class="token punctuation">,</span> <span class="token number">247</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        hintText<span class="token punctuation">:</span> <span class="token string">&quot;请输入手机号码&quot;</span><span class="token punctuation">,</span>
+        prefixIcon<span class="token punctuation">:</span> <span class="token function">Image</span><span class="token punctuation">(</span>
+            image<span class="token punctuation">:</span> <span class="token function">AssetImage</span><span class="token punctuation">(</span>
+                <span class="token string">&quot;assets/images/login/account.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="模态框"><a href="#模态框" class="header-anchor">#</a> 模态框</h2> <div class="language-d extra-class"><pre class="language-d"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 显示 <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token function">showMySimpleDialog</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">showMySimpleDialog</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  var tipsTextStyle <span class="token operator">=</span> <span class="token function">TextStyle</span><span class="token punctuation">(</span>
+    fontSize<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+    color<span class="token punctuation">:</span> Color<span class="token punctuation">.</span><span class="token function">fromRGBO</span><span class="token punctuation">(</span><span class="token number">74</span><span class="token punctuation">,</span> <span class="token number">74</span><span class="token punctuation">,</span> <span class="token number">74</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">showDialog</span><span class="token punctuation">(</span>
+      context<span class="token punctuation">:</span> context<span class="token punctuation">,</span>
+      builder<span class="token punctuation">:</span> <span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">SimpleDialog</span><span class="token punctuation">(</span>
+          contentPadding<span class="token punctuation">:</span> EdgeInsets<span class="token punctuation">.</span><span class="token function">only</span><span class="token punctuation">(</span>top<span class="token punctuation">:</span> <span class="token number">35</span><span class="token punctuation">,</span> bottom<span class="token punctuation">:</span> <span class="token number">45</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          shape<span class="token punctuation">:</span> <span class="token function">RoundedRectangleBorder</span><span class="token punctuation">(</span>
+            borderRadius<span class="token punctuation">:</span> BorderRadius<span class="token punctuation">.</span><span class="token function">circular</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">)</span><span class="token punctuation">,</span>
+          children<span class="token punctuation">:</span> <span class="token operator">&lt;</span>Widget<span class="token operator">&gt;</span><span class="token punctuation">[</span>
+            <span class="token function">Center</span><span class="token punctuation">(</span>
+                child<span class="token punctuation">:</span> <span class="token function">Image</span><span class="token punctuation">(</span>
+                    image<span class="token punctuation">:</span> <span class="token function">AssetImage</span><span class="token punctuation">(</span><span class="token string">&quot;assets/images/login/add_user.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token function">SizedBox</span><span class="token punctuation">(</span>height<span class="token punctuation">:</span> <span class="token number">24</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token function">Text</span><span class="token punctuation">(</span>
+              '您已成功注册账号'<span class="token punctuation">,</span>
+              textAlign<span class="token punctuation">:</span> TextAlign<span class="token punctuation">.</span>center<span class="token punctuation">,</span>
+              style<span class="token punctuation">:</span> tipsTextStyle<span class="token punctuation">,</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token function">SizedBox</span><span class="token punctuation">(</span>height<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token function">Text</span><span class="token punctuation">(</span>
+              '将自动返回登录页面'<span class="token punctuation">,</span>
+              textAlign<span class="token punctuation">:</span> TextAlign<span class="token punctuation">.</span>center<span class="token punctuation">,</span>
+              style<span class="token punctuation">:</span> tipsTextStyle<span class="token punctuation">,</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="停用方法"><a href="#停用方法" class="header-anchor">#</a> 停用方法</h2> <p>首次不会执行(页面显示隐藏判断)</p> <div class="language-d extra-class"><pre class="language-d"><code>
+<span class="token keyword">bool</span> isVisible <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
+
+<span class="token property">@override</span>
+<span class="token keyword">void</span> <span class="token function">deactivate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  isVisible <span class="token operator">=</span> <span class="token operator">!</span>isVisible<span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>'isVisible'<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>isVisible<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>isVisible<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//onResume</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">//onStop</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">deactivate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="生成列表"><a href="#生成列表" class="header-anchor">#</a> 生成列表</h2> <div class="language-d extra-class"><pre class="language-d"><code>
+List<span class="token operator">&lt;</span>Widget<span class="token operator">&gt;</span> licenseList <span class="token operator">=</span> List<span class="token punctuation">.</span><span class="token function">generate</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>licenseList<span class="token punctuation">.</span>length<span class="token punctuation">,</span> <span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">FractionallySizedBox</span><span class="token punctuation">(</span>
+    widthFactor<span class="token punctuation">:</span> <span class="token number">0.45</span><span class="token punctuation">,</span>
+    child<span class="token punctuation">:</span> <span class="token function">MyCachedNetworkImage</span><span class="token punctuation">(</span>
+      data<span class="token punctuation">.</span>licenseList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>path<span class="token punctuation">,</span>
+      size<span class="token punctuation">:</span> <span class="token number">155</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="物理返回钩子"><a href="#物理返回钩子" class="header-anchor">#</a> 物理返回钩子</h2> <div class="language- extra-class"><pre class="language-text"><code>WillPopScope(
+  onWillPop: () async {
+    //do something
+    return true;
+  },
+  child:Text(&quot;12&quot;),
+)
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">lastUpdate:</span> <span class="time">5/26/2020, 7:17:09 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/flutter/base/provider.html" class="prev">
+        Provider
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/assets/js/app.da8e2192.js" defer></script><script src="/assets/js/2.cdc42c07.js" defer></script><script src="/assets/js/1.96d66c9e.js" defer></script><script src="/assets/js/44.8e2a1add.js" defer></script>
+  </body>
+</html>
